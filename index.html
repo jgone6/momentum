@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | sample</title>
+    <title>Unity WebGL Player | metaverse</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=480 height=320></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">sample</div>
+        <div id="unity-build-title">metaverse</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/testweb.loader.js";
+      var loaderUrl = buildUrl + "/momentum.loader.js";
       var config = {
-        dataUrl: buildUrl + "/testweb.data.gz",
-        frameworkUrl: buildUrl + "/testweb.framework.js.gz",
-        codeUrl: buildUrl + "/testweb.wasm.gz",
+        dataUrl: buildUrl + "/momentum.data.unityweb",
+        frameworkUrl: buildUrl + "/momentum.framework.js.unityweb",
+        codeUrl: buildUrl + "/momentum.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Sample Inc.",
-        productName: "sample",
-        productVersion: "1.0",
+        companyName: "DefaultCompany",
+        productName: "metaverse",
+        productVersion: "0.1",
         showBanner: unityShowBanner,
       };
 
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "480px";
-        canvas.style.height = "320px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
